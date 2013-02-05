@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Health Radar -- fetching country info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="country-info.js"></script>
+	<script type="text/javascript">
+		function findCountry() {
+			var inputCode = $("#countryInput").val();
+			var loc = $("#countryLocation");
+			loc.empty();
+			loc.append( $("<p />", {text:inputCode}) );
+			loc.append( $("<p />", {text:""+countryInfo[inputCode].latitude+", "+countryInfo[inputCode].longitude}) );
+		}
+	</script>
+  </head>
+  <body onload="updateCountryInfo()">
+    something... <br />
+	<input id="countryInput" type="text" onchange="findCountry()" />
+	<div id="countryLocation">Search by country code</div>
+  </body>
+</html>

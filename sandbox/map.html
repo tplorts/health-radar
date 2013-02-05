@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Health Radar Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	
+    <style>
+      html, body, #map_canvas {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    </style>
+	
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnOiybCXuruO3EII8NV1aEsa7SWE6mrJg&sensor=false&libraries=visualization">
+    </script>
+	
+	<script type="text/javascript" src="country-info.js"></script>
+	<script type="text/javascript" src="health-indicators.js"></script>
+	<script type="text/javascript" src="who-malaria.js"></script>
+
+  </head>
+  <body onload="initialize()">
+    <div id="map_canvas"></div>
+  </body>
+</html>
