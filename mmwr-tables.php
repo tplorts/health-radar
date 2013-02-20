@@ -2,8 +2,8 @@
 <?php
 
 require 'QueryPath/QueryPath.php';
-libxml_use_internal_errors( true );
-ini_set('display_errors', 'Off');
+//libxml_use_internal_errors( true );
+ini_set('display_errors', 'On');
 
 
 function getOldGPOStateAbbreviations() {

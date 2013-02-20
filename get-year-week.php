@@ -10,5 +10,3 @@ $qp = qp($doc->saveHTML());
 
 echo $qp->branch()->find("select[name='mmwr_year'] option[selected]")->text();
 echo $qp->branch()->find("select[name='mmwr_week'] option[selected]")->text();
-
-?>
