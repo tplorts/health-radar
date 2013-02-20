@@ -1,0 +1,2224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GHO Created="2013-01-29T02:25:49Z"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="ghodata.xsd">
+    <QueryParameter Name="baseurl" Value="http://hqsulin02.who.int:8086/athena/data/"/>
+    <QueryParameter Name="filter" Value="COUNTRY&#58;&#42;"/>
+    <QueryParameter Name="asof" Value="2013&#45;01&#45;16 18&#58;22&#58;59&#46;0"/>
+    <QueryParameter Name="metadata" Value="active"/>
+    <QueryParameter Name="target" Value="GHO/WHS3_48"/>
+    <Copyright><Display>(c) World Health Organization</Display></Copyright>
+    <Disclaimer><Display>The information in this database is provided as a service to our users.
+Any use of information in the web site should be accompanied by an
+acknowledgment of WHO as the source. The responsibility for the
+interpretation and use of the material lies with the user. In no event
+shall the World Health Organization be liable for any damages arising
+from the use of the information linked to this section.</Display></Disclaimer>
+  <Metadata>
+    <Dimension Label="GHO" IsMeasure="true"><Display>Indicator</Display>
+      <Code Label="WHS3&#95;48" URL="http&#58;&#47;&#47;apps&#46;who&#46;int&#47;gho&#47;indicatorregistry&#47;App&#95;Main&#47;view&#95;indicator&#46;aspx&#63;iid&#61;50"><Display>Malaria &#45; number of reported cases</Display></Code>
+    </Dimension>
+    <Dimension Label="COUNTRY"><Display>Country</Display>
+      <Code Label="JAM" DisplaySequence="85"><Display>Jamaica</Display></Code>
+      <Code Label="BTN" DisplaySequence="20"><Display>Bhutan</Display></Code>
+      <Code Label="TLS" DisplaySequence="172"><Display>Timor&#45;Leste</Display></Code>
+      <Code Label="DJI" DisplaySequence="50"><Display>Djibouti</Display></Code>
+      <Code Label="UGA" DisplaySequence="180"><Display>Uganda</Display></Code>
+      <Code Label="KOR" DisplaySequence="139"><Display>Republic of Korea</Display></Code>
+      <Code Label="KGZ" DisplaySequence="92"><Display>Kyrgyzstan</Display></Code>
+      <Code Label="MOZ" DisplaySequence="116"><Display>Mozambique</Display></Code>
+      <Code Label="YEM" DisplaySequence="191"><Display>Yemen</Display></Code>
+      <Code Label="COG" DisplaySequence="39"><Display>Congo</Display></Code>
+      <Code Label="COD" DisplaySequence="48"><Display>Democratic Republic of the Congo</Display></Code>
+      <Code Label="SYR" DisplaySequence="168"><Display>Syrian Arab Republic</Display></Code>
+      <Code Label="HTI" DisplaySequence="74"><Display>Haiti</Display></Code>
+      <Code Label="PNG" DisplaySequence="132"><Display>Papua New Guinea</Display></Code>
+      <Code Label="RWA" DisplaySequence="143"><Display>Rwanda</Display></Code>
+      <Code Label="MEX" DisplaySequence="110"><Display>Mexico</Display></Code>
+      <Code Label="TCD" DisplaySequence="34"><Display>Chad</Display></Code>
+      <Code Label="UZB" DisplaySequence="187"><Display>Uzbekistan</Display></Code>
+      <Code Label="IDN" DisplaySequence="79"><Display>Indonesia</Display></Code>
+      <Code Label="IND" DisplaySequence="78"><Display>India</Display></Code>
+      <Code Label="ARG" DisplaySequence="7"><Display>Argentina</Display></Code>
+      <Code Label="ARM" DisplaySequence="8"><Display>Armenia</Display></Code>
+      <Code Label="COM" DisplaySequence="38"><Display>Comoros</Display></Code>
+      <Code Label="VUT" DisplaySequence="188"><Display>Vanuatu</Display></Code>
+      <Code Label="COL" DisplaySequence="37"><Display>Colombia</Display></Code>
+      <Code Label="AZE" DisplaySequence="11"><Display>Azerbaijan</Display></Code>
+      <Code Label="TUR" DisplaySequence="177"><Display>Turkey</Display></Code>
+      <Code Label="GEO" DisplaySequence="65"><Display>Georgia</Display></Code>
+      <Code Label="GNQ" DisplaySequence="56"><Display>Equatorial Guinea</Display></Code>
+      <Code Label="NGA" DisplaySequence="125"><Display>Nigeria</Display></Code>
+      <Code Label="KEN" DisplaySequence="89"><Display>Kenya</Display></Code>
+      <Code Label="GNB" DisplaySequence="72"><Display>Guinea&#45;Bissau</Display></Code>
+      <Code Label="PAN" DisplaySequence="131"><Display>Panama</Display></Code>
+      <Code Label="TJK" DisplaySequence="169"><Display>Tajikistan</Display></Code>
+      <Code Label="GUY" DisplaySequence="73"><Display>Guyana</Display></Code>
+      <Code Label="PAK" DisplaySequence="129"><Display>Pakistan</Display></Code>
+      <Code Label="MDG" DisplaySequence="101"><Display>Madagascar</Display></Code>
+      <Code Label="VEN" DisplaySequence="189"><Display>Venezuela &#40;Bolivarian Republic of&#41;</Display></Code>
+      <Code Label="EGY" DisplaySequence="54"><Display>Egypt</Display></Code>
+      <Code Label="BDI" DisplaySequence="28"><Display>Burundi</Display></Code>
+      <Code Label="BLZ" DisplaySequence="18"><Display>Belize</Display></Code>
+      <Code Label="SAU" DisplaySequence="150"><Display>Saudi Arabia</Display></Code>
+      <Code Label="MMR" DisplaySequence="117"><Display>Myanmar</Display></Code>
+      <Code Label="CMR" DisplaySequence="30"><Display>Cameroon</Display></Code>
+      <Code Label="TKM" DisplaySequence="178"><Display>Turkmenistan</Display></Code>
+      <Code Label="MLI" DisplaySequence="105"><Display>Mali</Display></Code>
+      <Code Label="GMB" DisplaySequence="64"><Display>Gambia</Display></Code>
+      <Code Label="OMN" DisplaySequence="128"><Display>Oman</Display></Code>
+      <Code Label="NPL" DisplaySequence="120"><Display>Nepal</Display></Code>
+      <Code Label="GTM" DisplaySequence="70"><Display>Guatemala</Display></Code>
+      <Code Label="BFA" DisplaySequence="27"><Display>Burkina Faso</Display></Code>
+      <Code Label="LAO" DisplaySequence="93"><Display>Lao People&#39;s Democratic Republic</Display></Code>
+      <Code Label="PHL" DisplaySequence="135"><Display>Philippines</Display></Code>
+      <Code Label="ZMB" DisplaySequence="192"><Display>Zambia</Display></Code>
+      <Code Label="BEN" DisplaySequence="19"><Display>Benin</Display></Code>
+      <Code Label="NIC" DisplaySequence="123"><Display>Nicaragua</Display></Code>
+      <Code Label="NAM" DisplaySequence="118"><Display>Namibia</Display></Code>
+      <Code Label="PRY" DisplaySequence="133"><Display>Paraguay</Display></Code>
+      <Code Label="SUR" DisplaySequence="164"><Display>Suriname</Display></Code>
+      <Code Label="TZA" DisplaySequence="184"><Display>United Republic of Tanzania</Display></Code>
+      <Code Label="BGD" DisplaySequence="14"><Display>Bangladesh</Display></Code>
+      <Code Label="SDN" DisplaySequence="163"><Display>Sudan</Display></Code>
+      <Code Label="SLE" DisplaySequence="154"><Display>Sierra Leone</Display></Code>
+      <Code Label="SLB" DisplaySequence="158"><Display>Solomon Islands</Display></Code>
+      <Code Label="GHA" DisplaySequence="67"><Display>Ghana</Display></Code>
+      <Code Label="BOL" DisplaySequence="21"><Display>Bolivia &#40;Plurinational State of&#41;</Display></Code>
+      <Code Label="THA" DisplaySequence="170"><Display>Thailand</Display></Code>
+      <Code Label="LKA" DisplaySequence="162"><Display>Sri Lanka</Display></Code>
+      <Code Label="SLV" DisplaySequence="55"><Display>El Salvador</Display></Code>
+      <Code Label="LBR" DisplaySequence="97"><Display>Liberia</Display></Code>
+      <Code Label="PRK" DisplaySequence="47"><Display>Democratic People&#39;s Republic of Korea</Display></Code>
+      <Code Label="GIN" DisplaySequence="71"><Display>Guinea</Display></Code>
+      <Code Label="IRQ" DisplaySequence="81"><Display>Iraq</Display></Code>
+      <Code Label="ETH" DisplaySequence="59"><Display>Ethiopia</Display></Code>
+      <Code Label="IRN" DisplaySequence="80"><Display>Iran &#40;Islamic Republic of&#41;</Display></Code>
+      <Code Label="SEN" DisplaySequence="151"><Display>Senegal</Display></Code>
+      <Code Label="MYS" DisplaySequence="103"><Display>Malaysia</Display></Code>
+      <Code Label="BWA" DisplaySequence="23"><Display>Botswana</Display></Code>
+      <Code Label="DOM" DisplaySequence="52"><Display>Dominican Republic</Display></Code>
+      <Code Label="GAB" DisplaySequence="63"><Display>Gabon</Display></Code>
+      <Code Label="HND" DisplaySequence="75"><Display>Honduras</Display></Code>
+      <Code Label="MRT" DisplaySequence="108"><Display>Mauritania</Display></Code>
+      <Code Label="STP" DisplaySequence="149"><Display>Sao Tome and Principe</Display></Code>
+      <Code Label="SWZ" DisplaySequence="165"><Display>Swaziland</Display></Code>
+      <Code Label="ZAF" DisplaySequence="160"><Display>South Africa</Display></Code>
+      <Code Label="ECU" DisplaySequence="53"><Display>Ecuador</Display></Code>
+      <Code Label="DZA" DisplaySequence="3"><Display>Algeria</Display></Code>
+      <Code Label="PER" DisplaySequence="134"><Display>Peru</Display></Code>
+      <Code Label="CPV" DisplaySequence="32"><Display>Cape Verde</Display></Code>
+      <Code Label="ZWE" DisplaySequence="193"><Display>Zimbabwe</Display></Code>
+      <Code Label="VNM" DisplaySequence="190"><Display>Viet Nam</Display></Code>
+      <Code Label="BHS" DisplaySequence="12"><Display>Bahamas</Display></Code>
+      <Code Label="AGO" DisplaySequence="5"><Display>Angola</Display></Code>
+      <Code Label="CHN" DisplaySequence="36"><Display>China</Display></Code>
+      <Code Label="TGO" DisplaySequence="173"><Display>Togo</Display></Code>
+      <Code Label="CIV" DisplaySequence="46"><Display>C&#244;te d&#39;Ivoire</Display></Code>
+      <Code Label="ERI" DisplaySequence="57"><Display>Eritrea</Display></Code>
+      <Code Label="NER" DisplaySequence="124"><Display>Niger</Display></Code>
+      <Code Label="MAR" DisplaySequence="115"><Display>Morocco</Display></Code>
+      <Code Label="KHM" DisplaySequence="29"><Display>Cambodia</Display></Code>
+      <Code Label="SOM" DisplaySequence="159"><Display>Somalia</Display></Code>
+      <Code Label="AFG" DisplaySequence="1"><Display>Afghanistan</Display></Code>
+      <Code Label="RUS" DisplaySequence="142"><Display>Russian Federation</Display></Code>
+      <Code Label="CRI" DisplaySequence="41"><Display>Costa Rica</Display></Code>
+      <Code Label="BRA" DisplaySequence="24"><Display>Brazil</Display></Code>
+    </Dimension>
+    <Dimension Label="YEAR"><Display>Year</Display>
+      <Code Label="2008" DisplaySequence="109"><Display>2008</Display></Code>
+      <Code Label="2009" DisplaySequence="110"><Display>2009</Display></Code>
+      <Code Label="2010" DisplaySequence="111"><Display>2010</Display></Code>
+    </Dimension>
+    <Dimension Label="REGION"><Display>WHO region</Display>
+      <Code Label="EUR" DisplaySequence="4"><Display>Europe</Display></Code>
+      <Code Label="SEAR" DisplaySequence="3"><Display>South&#45;East Asia</Display></Code>
+      <Code Label="WPR" DisplaySequence="6"><Display>Western Pacific</Display></Code>
+      <Code Label="AFR" DisplaySequence="1"><Display>Africa</Display></Code>
+      <Code Label="AMR" DisplaySequence="2"><Display>Americas</Display></Code>
+      <Code Label="EMR" DisplaySequence="5"><Display>Eastern Mediterranean</Display></Code>
+    </Dimension>
+  </Metadata>
+  <Data>
+    <Observation>
+      <Value Numeric="81574.00000"><Display>81574</Display></Value>
+      <Dim Category="COUNTRY" Code="AFG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="64880.00000"><Display>64880</Display></Value>
+      <Dim Category="COUNTRY" Code="AFG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="69397.00000"><Display>69397</Display></Value>
+      <Dim Category="COUNTRY" Code="AFG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="ARM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="ARM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="ARM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1377992.00000"><Display>1377992</Display></Value>
+      <Dim Category="COUNTRY" Code="AGO"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1573422.00000"><Display>1573422</Display></Value>
+      <Dim Category="COUNTRY" Code="AGO"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1682870.00000"><Display>1682870</Display></Value>
+      <Dim Category="COUNTRY" Code="AGO"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="106.00000"><Display>106</Display></Value>
+      <Dim Category="COUNTRY" Code="ARG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="86.00000"><Display>86</Display></Value>
+      <Dim Category="COUNTRY" Code="ARG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="72.00000"><Display>72</Display></Value>
+      <Dim Category="COUNTRY" Code="ARG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="72.00000"><Display>72</Display></Value>
+      <Dim Category="COUNTRY" Code="AZE"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="78.00000"><Display>78</Display></Value>
+      <Dim Category="COUNTRY" Code="AZE"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="50.00000"><Display>50</Display></Value>
+      <Dim Category="COUNTRY" Code="AZE"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="84690.00000"><Display>84690</Display></Value>
+      <Dim Category="COUNTRY" Code="BGD"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="63873.00000"><Display>63873</Display></Value>
+      <Dim Category="COUNTRY" Code="BGD"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="91227.00000"><Display>91227</Display></Value>
+      <Dim Category="COUNTRY" Code="BGD"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="36514.00000"><Display>36514</Display></Value>
+      <Dim Category="COUNTRY" Code="BFA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="182527.00000"><Display>182527</Display></Value>
+      <Dim Category="COUNTRY" Code="BFA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="804539.00000"><Display>804539</Display></Value>
+      <Dim Category="COUNTRY" Code="BFA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="876741.00000"><Display>876741</Display></Value>
+      <Dim Category="COUNTRY" Code="BDI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1185622.00000"><Display>1185622</Display></Value>
+      <Dim Category="COUNTRY" Code="BDI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1763447.00000"><Display>1763447</Display></Value>
+      <Dim Category="COUNTRY" Code="BDI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="BEN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="889597.00000"><Display>889597</Display></Value>
+      <Dim Category="COUNTRY" Code="BEN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="9742.00000"><Display>9742</Display></Value>
+      <Dim Category="COUNTRY" Code="BOL"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="9743.00000"><Display>9743</Display></Value>
+      <Dim Category="COUNTRY" Code="BOL"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="13769.00000"><Display>13769</Display></Value>
+      <Dim Category="COUNTRY" Code="BOL"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="315746.00000"><Display>315746</Display></Value>
+      <Dim Category="COUNTRY" Code="BRA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="309316.00000"><Display>309316</Display></Value>
+      <Dim Category="COUNTRY" Code="BRA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="334618.00000"><Display>334618</Display></Value>
+      <Dim Category="COUNTRY" Code="BRA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="12.00000"><Display>12</Display></Value>
+      <Dim Category="COUNTRY" Code="BHS"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="BHS"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="329.00000"><Display>329</Display></Value>
+      <Dim Category="COUNTRY" Code="BTN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="972.00000"><Display>972</Display></Value>
+      <Dim Category="COUNTRY" Code="BTN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="436.00000"><Display>436</Display></Value>
+      <Dim Category="COUNTRY" Code="BTN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="927.00000"><Display>927</Display></Value>
+      <Dim Category="COUNTRY" Code="BWA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1024.00000"><Display>1024</Display></Value>
+      <Dim Category="COUNTRY" Code="BWA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1046.00000"><Display>1046</Display></Value>
+      <Dim Category="COUNTRY" Code="BWA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="538.00000"><Display>538</Display></Value>
+      <Dim Category="COUNTRY" Code="BLZ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="256.00000"><Display>256</Display></Value>
+      <Dim Category="COUNTRY" Code="BLZ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="150.00000"><Display>150</Display></Value>
+      <Dim Category="COUNTRY" Code="BLZ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1618218.00000"><Display>1618218</Display></Value>
+      <Dim Category="COUNTRY" Code="COD"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1878705.00000"><Display>1878705</Display></Value>
+      <Dim Category="COUNTRY" Code="COD"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="2417780.00000"><Display>2417780</Display></Value>
+      <Dim Category="COUNTRY" Code="COD"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="117291.00000"><Display>117291</Display></Value>
+      <Dim Category="COUNTRY" Code="COG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="92855.00000"><Display>92855</Display></Value>
+      <Dim Category="COUNTRY" Code="COG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="3527.00000"><Display>3527</Display></Value>
+      <Dim Category="COUNTRY" Code="CIV"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="7388.00000"><Display>7388</Display></Value>
+      <Dim Category="COUNTRY" Code="CIV"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="62726.00000"><Display>62726</Display></Value>
+      <Dim Category="COUNTRY" Code="CIV"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="CMR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="15870.00000"><Display>15870</Display></Value>
+      <Dim Category="COUNTRY" Code="CHN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="9287.00000"><Display>9287</Display></Value>
+      <Dim Category="COUNTRY" Code="CHN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="4990.00000"><Display>4990</Display></Value>
+      <Dim Category="COUNTRY" Code="CHN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="80501.00000"><Display>80501</Display></Value>
+      <Dim Category="COUNTRY" Code="COL"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="79347.00000"><Display>79347</Display></Value>
+      <Dim Category="COUNTRY" Code="COL"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="117650.00000"><Display>117650</Display></Value>
+      <Dim Category="COUNTRY" Code="COL"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="966.00000"><Display>966</Display></Value>
+      <Dim Category="COUNTRY" Code="CRI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="262.00000"><Display>262</Display></Value>
+      <Dim Category="COUNTRY" Code="CRI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="114.00000"><Display>114</Display></Value>
+      <Dim Category="COUNTRY" Code="CRI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="16.00000"><Display>16</Display></Value>
+      <Dim Category="COUNTRY" Code="CPV"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="65.00000"><Display>65</Display></Value>
+      <Dim Category="COUNTRY" Code="CPV"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="18.00000"><Display>18</Display></Value>
+      <Dim Category="COUNTRY" Code="CPV"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="119.00000"><Display>119</Display></Value>
+      <Dim Category="COUNTRY" Code="DJI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="2686.00000"><Display>2686</Display></Value>
+      <Dim Category="COUNTRY" Code="DJI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1019.00000"><Display>1019</Display></Value>
+      <Dim Category="COUNTRY" Code="DJI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1668.00000"><Display>1668</Display></Value>
+      <Dim Category="COUNTRY" Code="DOM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1643.00000"><Display>1643</Display></Value>
+      <Dim Category="COUNTRY" Code="DOM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="3414.00000"><Display>3414</Display></Value>
+      <Dim Category="COUNTRY" Code="DOM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="3.00000"><Display>3</Display></Value>
+      <Dim Category="COUNTRY" Code="DZA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="DZA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="5.00000"><Display>5</Display></Value>
+      <Dim Category="COUNTRY" Code="DZA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="4891.00000"><Display>4891</Display></Value>
+      <Dim Category="COUNTRY" Code="ECU"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="4120.00000"><Display>4120</Display></Value>
+      <Dim Category="COUNTRY" Code="ECU"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1888.00000"><Display>1888</Display></Value>
+      <Dim Category="COUNTRY" Code="ECU"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="EGY"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="EGY"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="EGY"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="8764.00000"><Display>8764</Display></Value>
+      <Dim Category="COUNTRY" Code="ERI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="11759.00000"><Display>11759</Display></Value>
+      <Dim Category="COUNTRY" Code="ERI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="35982.00000"><Display>35982</Display></Value>
+      <Dim Category="COUNTRY" Code="ERI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="458561.00000"><Display>458561</Display></Value>
+      <Dim Category="COUNTRY" Code="ETH"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1036316.00000"><Display>1036316</Display></Value>
+      <Dim Category="COUNTRY" Code="ETH"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1158197.00000"><Display>1158197</Display></Value>
+      <Dim Category="COUNTRY" Code="ETH"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="40701.00000"><Display>40701</Display></Value>
+      <Dim Category="COUNTRY" Code="GAB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="660.00000"><Display>660</Display></Value>
+      <Dim Category="COUNTRY" Code="GAB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="8566.00000"><Display>8566</Display></Value>
+      <Dim Category="COUNTRY" Code="GAB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="6.00000"><Display>6</Display></Value>
+      <Dim Category="COUNTRY" Code="GEO"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1.00000"><Display>1</Display></Value>
+      <Dim Category="COUNTRY" Code="GEO"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="GEO"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1094483.00000"><Display>1094483</Display></Value>
+      <Dim Category="COUNTRY" Code="GHA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1104370.00000"><Display>1104370</Display></Value>
+      <Dim Category="COUNTRY" Code="GHA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1071637.00000"><Display>1071637</Display></Value>
+      <Dim Category="COUNTRY" Code="GHA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="39164.00000"><Display>39164</Display></Value>
+      <Dim Category="COUNTRY" Code="GMB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="50378.00000"><Display>50378</Display></Value>
+      <Dim Category="COUNTRY" Code="GMB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="116353.00000"><Display>116353</Display></Value>
+      <Dim Category="COUNTRY" Code="GMB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="33405.00000"><Display>33405</Display></Value>
+      <Dim Category="COUNTRY" Code="GIN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="35841.00000"><Display>35841</Display></Value>
+      <Dim Category="COUNTRY" Code="GIN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="9503.00000"><Display>9503</Display></Value>
+      <Dim Category="COUNTRY" Code="GNQ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="14184.00000"><Display>14184</Display></Value>
+      <Dim Category="COUNTRY" Code="GNQ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="7193.00000"><Display>7193</Display></Value>
+      <Dim Category="COUNTRY" Code="GTM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="7080.00000"><Display>7080</Display></Value>
+      <Dim Category="COUNTRY" Code="GTM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="7198.00000"><Display>7198</Display></Value>
+      <Dim Category="COUNTRY" Code="GTM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="11299.00000"><Display>11299</Display></Value>
+      <Dim Category="COUNTRY" Code="GNB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="11757.00000"><Display>11757</Display></Value>
+      <Dim Category="COUNTRY" Code="GNB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="11774.00000"><Display>11774</Display></Value>
+      <Dim Category="COUNTRY" Code="GUY"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="13673.00000"><Display>13673</Display></Value>
+      <Dim Category="COUNTRY" Code="GUY"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="22935.00000"><Display>22935</Display></Value>
+      <Dim Category="COUNTRY" Code="GUY"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="8368.00000"><Display>8368</Display></Value>
+      <Dim Category="COUNTRY" Code="HND"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="9313.00000"><Display>9313</Display></Value>
+      <Dim Category="COUNTRY" Code="HND"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="9629.00000"><Display>9629</Display></Value>
+      <Dim Category="COUNTRY" Code="HND"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="36769.00000"><Display>36769</Display></Value>
+      <Dim Category="COUNTRY" Code="HTI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="49535.00000"><Display>49535</Display></Value>
+      <Dim Category="COUNTRY" Code="HTI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="84153.00000"><Display>84153</Display></Value>
+      <Dim Category="COUNTRY" Code="HTI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="266277.00000"><Display>266277</Display></Value>
+      <Dim Category="COUNTRY" Code="IDN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="272491.00000"><Display>272491</Display></Value>
+      <Dim Category="COUNTRY" Code="IDN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="229819.00000"><Display>229819</Display></Value>
+      <Dim Category="COUNTRY" Code="IDN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1532497.00000"><Display>1532497</Display></Value>
+      <Dim Category="COUNTRY" Code="IND"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1563344.00000"><Display>1563344</Display></Value>
+      <Dim Category="COUNTRY" Code="IND"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1599986.00000"><Display>1599986</Display></Value>
+      <Dim Category="COUNTRY" Code="IND"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="2.00000"><Display>2</Display></Value>
+      <Dim Category="COUNTRY" Code="IRQ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="IRQ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="IRQ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="8349.00000"><Display>8349</Display></Value>
+      <Dim Category="COUNTRY" Code="IRN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="4477.00000"><Display>4477</Display></Value>
+      <Dim Category="COUNTRY" Code="IRN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1847.00000"><Display>1847</Display></Value>
+      <Dim Category="COUNTRY" Code="IRN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="18.00000"><Display>18</Display></Value>
+      <Dim Category="COUNTRY" Code="JAM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="15.00000"><Display>15</Display></Value>
+      <Dim Category="COUNTRY" Code="JAM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="839903.56000"><Display>839903&#46;56</Display></Value>
+      <Dim Category="COUNTRY" Code="KEN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="898531.00000"><Display>898531</Display></Value>
+      <Dim Category="COUNTRY" Code="KEN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="18.00000"><Display>18</Display></Value>
+      <Dim Category="COUNTRY" Code="KGZ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="4.00000"><Display>4</Display></Value>
+      <Dim Category="COUNTRY" Code="KGZ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="3.00000"><Display>3</Display></Value>
+      <Dim Category="COUNTRY" Code="KGZ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="42124.00000"><Display>42124</Display></Value>
+      <Dim Category="COUNTRY" Code="KHM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="64595.00000"><Display>64595</Display></Value>
+      <Dim Category="COUNTRY" Code="KHM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="49356.00000"><Display>49356</Display></Value>
+      <Dim Category="COUNTRY" Code="KHM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="5982.00000"><Display>5982</Display></Value>
+      <Dim Category="COUNTRY" Code="COM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="36538.00000"><Display>36538</Display></Value>
+      <Dim Category="COUNTRY" Code="COM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="16136.00000"><Display>16136</Display></Value>
+      <Dim Category="COUNTRY" Code="PRK"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="14322.00000"><Display>14322</Display></Value>
+      <Dim Category="COUNTRY" Code="PRK"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="13393.00000"><Display>13393</Display></Value>
+      <Dim Category="COUNTRY" Code="PRK"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1023.00000"><Display>1023</Display></Value>
+      <Dim Category="COUNTRY" Code="KOR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1319.00000"><Display>1319</Display></Value>
+      <Dim Category="COUNTRY" Code="KOR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1721.00000"><Display>1721</Display></Value>
+      <Dim Category="COUNTRY" Code="KOR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="19347.00000"><Display>19347</Display></Value>
+      <Dim Category="COUNTRY" Code="LAO"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="14674.00000"><Display>14674</Display></Value>
+      <Dim Category="COUNTRY" Code="LAO"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="20800.00000"><Display>20800</Display></Value>
+      <Dim Category="COUNTRY" Code="LAO"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="649.00000"><Display>649</Display></Value>
+      <Dim Category="COUNTRY" Code="LKA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="531.00000"><Display>531</Display></Value>
+      <Dim Category="COUNTRY" Code="LKA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="632.00000"><Display>632</Display></Value>
+      <Dim Category="COUNTRY" Code="LKA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="606952.00000"><Display>606952</Display></Value>
+      <Dim Category="COUNTRY" Code="LBR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="839581.00000"><Display>839581</Display></Value>
+      <Dim Category="COUNTRY" Code="LBR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="922173.00000"><Display>922173</Display></Value>
+      <Dim Category="COUNTRY" Code="LBR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="MAR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="MAR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="3.00000"><Display>3</Display></Value>
+      <Dim Category="COUNTRY" Code="MAR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="93234.00000"><Display>93234</Display></Value>
+      <Dim Category="COUNTRY" Code="MDG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="215110.00000"><Display>215110</Display></Value>
+      <Dim Category="COUNTRY" Code="MDG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="202450.00000"><Display>202450</Display></Value>
+      <Dim Category="COUNTRY" Code="MDG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="227482.00000"><Display>227482</Display></Value>
+      <Dim Category="COUNTRY" Code="MLI"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="447073.00000"><Display>447073</Display></Value>
+      <Dim Category="COUNTRY" Code="MMR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="436068.00000"><Display>436068</Display></Value>
+      <Dim Category="COUNTRY" Code="MMR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="420808.00000"><Display>420808</Display></Value>
+      <Dim Category="COUNTRY" Code="MMR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="302.00000"><Display>302</Display></Value>
+      <Dim Category="COUNTRY" Code="MRT"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="940.00000"><Display>940</Display></Value>
+      <Dim Category="COUNTRY" Code="MRT"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1994.00000"><Display>1994</Display></Value>
+      <Dim Category="COUNTRY" Code="MRT"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="916.00000"><Display>916</Display></Value>
+      <Dim Category="COUNTRY" Code="MEX"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="2703.00000"><Display>2703</Display></Value>
+      <Dim Category="COUNTRY" Code="MEX"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1226.00000"><Display>1226</Display></Value>
+      <Dim Category="COUNTRY" Code="MEX"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="6517.00000"><Display>6517</Display></Value>
+      <Dim Category="COUNTRY" Code="MYS"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="6426.00000"><Display>6426</Display></Value>
+      <Dim Category="COUNTRY" Code="MYS"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="5819.00000"><Display>5819</Display></Value>
+      <Dim Category="COUNTRY" Code="MYS"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="120259.00000"><Display>120259</Display></Value>
+      <Dim Category="COUNTRY" Code="MOZ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="93874.00000"><Display>93874</Display></Value>
+      <Dim Category="COUNTRY" Code="MOZ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1522577.00000"><Display>1522577</Display></Value>
+      <Dim Category="COUNTRY" Code="MOZ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1092.00000"><Display>1092</Display></Value>
+      <Dim Category="COUNTRY" Code="NAM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="505.00000"><Display>505</Display></Value>
+      <Dim Category="COUNTRY" Code="NAM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="556.00000"><Display>556</Display></Value>
+      <Dim Category="COUNTRY" Code="NAM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="496858.00000"><Display>496858</Display></Value>
+      <Dim Category="COUNTRY" Code="NER"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="309675.00000"><Display>309675</Display></Value>
+      <Dim Category="COUNTRY" Code="NER"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="620058.00000"><Display>620058</Display></Value>
+      <Dim Category="COUNTRY" Code="NER"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="143079.00000"><Display>143079</Display></Value>
+      <Dim Category="COUNTRY" Code="NGA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="479845.00000"><Display>479845</Display></Value>
+      <Dim Category="COUNTRY" Code="NGA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="551187.00000"><Display>551187</Display></Value>
+      <Dim Category="COUNTRY" Code="NGA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="762.00000"><Display>762</Display></Value>
+      <Dim Category="COUNTRY" Code="NIC"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="610.00000"><Display>610</Display></Value>
+      <Dim Category="COUNTRY" Code="NIC"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="692.00000"><Display>692</Display></Value>
+      <Dim Category="COUNTRY" Code="NIC"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="3228.00000"><Display>3228</Display></Value>
+      <Dim Category="COUNTRY" Code="NPL"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="2725.00000"><Display>2725</Display></Value>
+      <Dim Category="COUNTRY" Code="NPL"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="3894.00000"><Display>3894</Display></Value>
+      <Dim Category="COUNTRY" Code="NPL"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="8.00000"><Display>8</Display></Value>
+      <Dim Category="COUNTRY" Code="OMN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="OMN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="24.00000"><Display>24</Display></Value>
+      <Dim Category="COUNTRY" Code="OMN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="732.00000"><Display>732</Display></Value>
+      <Dim Category="COUNTRY" Code="PAN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="770.00000"><Display>770</Display></Value>
+      <Dim Category="COUNTRY" Code="PAN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="418.00000"><Display>418</Display></Value>
+      <Dim Category="COUNTRY" Code="PAN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="42214.00000"><Display>42214</Display></Value>
+      <Dim Category="COUNTRY" Code="PER"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="36886.00000"><Display>36886</Display></Value>
+      <Dim Category="COUNTRY" Code="PER"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="26847.00000"><Display>26847</Display></Value>
+      <Dim Category="COUNTRY" Code="PER"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="84452.00000"><Display>84452</Display></Value>
+      <Dim Category="COUNTRY" Code="PNG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="77758.00000"><Display>77758</Display></Value>
+      <Dim Category="COUNTRY" Code="PNG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="93956.00000"><Display>93956</Display></Value>
+      <Dim Category="COUNTRY" Code="PNG"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="23653.00000"><Display>23653</Display></Value>
+      <Dim Category="COUNTRY" Code="PHL"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="19316.00000"><Display>19316</Display></Value>
+      <Dim Category="COUNTRY" Code="PHL"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="18560.00000"><Display>18560</Display></Value>
+      <Dim Category="COUNTRY" Code="PHL"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="104334.00000"><Display>104334</Display></Value>
+      <Dim Category="COUNTRY" Code="PAK"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="167579.00000"><Display>167579</Display></Value>
+      <Dim Category="COUNTRY" Code="PAK"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="240591.00000"><Display>240591</Display></Value>
+      <Dim Category="COUNTRY" Code="PAK"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="348.00000"><Display>348</Display></Value>
+      <Dim Category="COUNTRY" Code="PRY"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="91.00000"><Display>91</Display></Value>
+      <Dim Category="COUNTRY" Code="PRY"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="27.00000"><Display>27</Display></Value>
+      <Dim Category="COUNTRY" Code="PRY"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="8.00000"><Display>8</Display></Value>
+      <Dim Category="COUNTRY" Code="RUS"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="RUS"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1.00000"><Display>1</Display></Value>
+      <Dim Category="COUNTRY" Code="RUS"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="316242.00000"><Display>316242</Display></Value>
+      <Dim Category="COUNTRY" Code="RWA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="698745.00000"><Display>698745</Display></Value>
+      <Dim Category="COUNTRY" Code="RWA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="638669.00000"><Display>638669</Display></Value>
+      <Dim Category="COUNTRY" Code="RWA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="61.00000"><Display>61</Display></Value>
+      <Dim Category="COUNTRY" Code="SAU"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="58.00000"><Display>58</Display></Value>
+      <Dim Category="COUNTRY" Code="SAU"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="29.00000"><Display>29</Display></Value>
+      <Dim Category="COUNTRY" Code="SAU"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="40535.00000"><Display>40535</Display></Value>
+      <Dim Category="COUNTRY" Code="SLB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="33002.00000"><Display>33002</Display></Value>
+      <Dim Category="COUNTRY" Code="SLB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="40682.00000"><Display>40682</Display></Value>
+      <Dim Category="COUNTRY" Code="SLB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="621307.00000"><Display>621307</Display></Value>
+      <Dim Category="COUNTRY" Code="SDN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="711462.00000"><Display>711462</Display></Value>
+      <Dim Category="COUNTRY" Code="SDN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1620840.00000"><Display>1620840</Display></Value>
+      <Dim Category="COUNTRY" Code="SDN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="154459.00000"><Display>154459</Display></Value>
+      <Dim Category="COUNTRY" Code="SLE"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="646808.00000"><Display>646808</Display></Value>
+      <Dim Category="COUNTRY" Code="SLE"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="934028.00000"><Display>934028</Display></Value>
+      <Dim Category="COUNTRY" Code="SLE"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="241926.00000"><Display>241926</Display></Value>
+      <Dim Category="COUNTRY" Code="SEN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="165933.00000"><Display>165933</Display></Value>
+      <Dim Category="COUNTRY" Code="SEN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="36905.00000"><Display>36905</Display></Value>
+      <Dim Category="COUNTRY" Code="SOM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="25202.00000"><Display>25202</Display></Value>
+      <Dim Category="COUNTRY" Code="SOM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="24553.00000"><Display>24553</Display></Value>
+      <Dim Category="COUNTRY" Code="SOM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="2709.00000"><Display>2709</Display></Value>
+      <Dim Category="COUNTRY" Code="SUR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="346.00000"><Display>346</Display></Value>
+      <Dim Category="COUNTRY" Code="SUR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="791.00000"><Display>791</Display></Value>
+      <Dim Category="COUNTRY" Code="SUR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="6258.00000"><Display>6258</Display></Value>
+      <Dim Category="COUNTRY" Code="STP"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="6182.00000"><Display>6182</Display></Value>
+      <Dim Category="COUNTRY" Code="STP"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="2740.00000"><Display>2740</Display></Value>
+      <Dim Category="COUNTRY" Code="STP"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="21.00000"><Display>21</Display></Value>
+      <Dim Category="COUNTRY" Code="SLV"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="10.00000"><Display>10</Display></Value>
+      <Dim Category="COUNTRY" Code="SLV"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="24.00000"><Display>24</Display></Value>
+      <Dim Category="COUNTRY" Code="SLV"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="SYR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="SYR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="SYR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="58.00000"><Display>58</Display></Value>
+      <Dim Category="COUNTRY" Code="SWZ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="106.00000"><Display>106</Display></Value>
+      <Dim Category="COUNTRY" Code="SWZ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="147.00000"><Display>147</Display></Value>
+      <Dim Category="COUNTRY" Code="SWZ"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="47757.00000"><Display>47757</Display></Value>
+      <Dim Category="COUNTRY" Code="TCD"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="344862.00000"><Display>344862</Display></Value>
+      <Dim Category="COUNTRY" Code="TGO"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="391338.00000"><Display>391338</Display></Value>
+      <Dim Category="COUNTRY" Code="TGO"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="617101.00000"><Display>617101</Display></Value>
+      <Dim Category="COUNTRY" Code="TGO"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="28569.00000"><Display>28569</Display></Value>
+      <Dim Category="COUNTRY" Code="THA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="29462.00000"><Display>29462</Display></Value>
+      <Dim Category="COUNTRY" Code="THA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="32480.00000"><Display>32480</Display></Value>
+      <Dim Category="COUNTRY" Code="THA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="314.00000"><Display>314</Display></Value>
+      <Dim Category="COUNTRY" Code="TJK"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="164.00000"><Display>164</Display></Value>
+      <Dim Category="COUNTRY" Code="TJK"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="111.00000"><Display>111</Display></Value>
+      <Dim Category="COUNTRY" Code="TJK"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="51260.00000"><Display>51260</Display></Value>
+      <Dim Category="COUNTRY" Code="TLS"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="47527.00000"><Display>47527</Display></Value>
+      <Dim Category="COUNTRY" Code="TLS"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="48137.00000"><Display>48137</Display></Value>
+      <Dim Category="COUNTRY" Code="TLS"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="SEAR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="TKM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="TKM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="TKM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="166.00000"><Display>166</Display></Value>
+      <Dim Category="COUNTRY" Code="TUR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="38.00000"><Display>38</Display></Value>
+      <Dim Category="COUNTRY" Code="TUR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="9.00000"><Display>9</Display></Value>
+      <Dim Category="COUNTRY" Code="TUR"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="67.00000"><Display>67</Display></Value>
+      <Dim Category="COUNTRY" Code="TZA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="40.00000"><Display>40</Display></Value>
+      <Dim Category="COUNTRY" Code="TZA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="979298.00000"><Display>979298</Display></Value>
+      <Dim Category="COUNTRY" Code="UGA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1301337.00000"><Display>1301337</Display></Value>
+      <Dim Category="COUNTRY" Code="UGA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="1581160.00000"><Display>1581160</Display></Value>
+      <Dim Category="COUNTRY" Code="UGA"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="7.00000"><Display>7</Display></Value>
+      <Dim Category="COUNTRY" Code="UZB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="UZB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="3.00000"><Display>3</Display></Value>
+      <Dim Category="COUNTRY" Code="UZB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EUR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="31483.00000"><Display>31483</Display></Value>
+      <Dim Category="COUNTRY" Code="VEN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="35100.00000"><Display>35100</Display></Value>
+      <Dim Category="COUNTRY" Code="VEN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="45155.00000"><Display>45155</Display></Value>
+      <Dim Category="COUNTRY" Code="VEN"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="11355.00000"><Display>11355</Display></Value>
+      <Dim Category="COUNTRY" Code="VNM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="16130.00000"><Display>16130</Display></Value>
+      <Dim Category="COUNTRY" Code="VNM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="17515.00000"><Display>17515</Display></Value>
+      <Dim Category="COUNTRY" Code="VNM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="3765.00000"><Display>3765</Display></Value>
+      <Dim Category="COUNTRY" Code="VUT"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="4189.00000"><Display>4189</Display></Value>
+      <Dim Category="COUNTRY" Code="VUT"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="8169.00000"><Display>8169</Display></Value>
+      <Dim Category="COUNTRY" Code="VUT"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="WPR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="44206.00000"><Display>44206</Display></Value>
+      <Dim Category="COUNTRY" Code="YEM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="55446.00000"><Display>55446</Display></Value>
+      <Dim Category="COUNTRY" Code="YEM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="106697.00000"><Display>106697</Display></Value>
+      <Dim Category="COUNTRY" Code="YEM"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="EMR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="7796.00000"><Display>7796</Display></Value>
+      <Dim Category="COUNTRY" Code="ZAF"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="84.00000"><Display>84</Display></Value>
+      <Dim Category="COUNTRY" Code="ZAF"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="3875.00000"><Display>3875</Display></Value>
+      <Dim Category="COUNTRY" Code="ZAF"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="ZMB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="0.00000"><Display>0</Display></Value>
+      <Dim Category="COUNTRY" Code="ZMB"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="32788.00000"><Display>32788</Display></Value>
+      <Dim Category="COUNTRY" Code="ZWE"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2008"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="114028.00000"><Display>114028</Display></Value>
+      <Dim Category="COUNTRY" Code="ZWE"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2009"/>
+    </Observation>
+    <Observation>
+      <Value Numeric="249379.00000"><Display>249379</Display></Value>
+      <Dim Category="COUNTRY" Code="ZWE"/>
+      <Dim Category="GHO" Code="WHS3_48"/>
+      <Dim Category="REGION" Code="AFR"/>
+      <Dim Category="YEAR" Code="2010"/>
+    </Observation>
+  </Data>
+</GHO>
+
