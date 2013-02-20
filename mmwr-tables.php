@@ -2,7 +2,8 @@
 <?php
 
 require 'QueryPath/QueryPath.php';
-//libxml_use_internal_errors( true );
+libxml_use_internal_errors( true );
+ini_set('display_errors', 'Off');
 
 
 function getOldGPOStateAbbreviations() {
@@ -102,5 +103,3 @@ foreach( $qpMMRWTable->find("tr") as $caseRow ) {
 	}
 }
 echo json_encode( $illnessCases );
-
-?>
