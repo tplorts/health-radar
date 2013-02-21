@@ -34,6 +34,9 @@ else
 libxml_use_internal_errors( !$isTest );
 ini_set( 'display_errors', ($isTest ? 'On' : 'Off') );
 
+if( $isTest )
+	echo "This is a test.";
+else {
 
 $stateArray = getOldGPOStateAbbreviations();
 if( $isTest )
@@ -124,4 +127,6 @@ if( !$isTest ) {
 		}
 	}
 	echo json_encode( $illnessCases );
+}
+
 }
