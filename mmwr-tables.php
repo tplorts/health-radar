@@ -1,4 +1,3 @@
-
 <?php
 
 require 'QueryPath/QueryPath.php';
