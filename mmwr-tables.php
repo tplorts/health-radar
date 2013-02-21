@@ -27,6 +27,10 @@ function getOldGPOStateAbbreviations() {
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 $isTest = ( array_key_exists("test", $_GET) );
+if( $isTest )
+	echo "This is a test.";
+else {
+
 if( $isTest && !array_key_exists("diseaseName", $_GET) )
 	$queriedDisease = "Chlamydia trachomatis infection";
 else
@@ -34,9 +38,7 @@ else
 libxml_use_internal_errors( !$isTest );
 ini_set( 'display_errors', ($isTest ? 'On' : 'Off') );
 
-if( $isTest )
-	echo "This is a test.";
-else {
+
 
 $stateArray = getOldGPOStateAbbreviations();
 if( $isTest )
