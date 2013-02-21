@@ -64,7 +64,7 @@
 		
 		$("#progressbar").progressbar( "value", 20 );
 		
-		$.getJSON('mmwr-tables.php', 
+		$.getJSON('QueryMMWR.php', 
 			{"diseaseName": diseaseName},
 			function(illnesses) {
 				$("#progressbar").progressbar( "value", 60 );
