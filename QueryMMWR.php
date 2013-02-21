@@ -48,7 +48,7 @@ $mmwrTableUrl = "http://wonder.cdc.gov/mmwr/mmwr_reps.asp?mmwr_year=".$yearPrese
 if( $isTest )
 	echo "<p>About to request <a href='".$mmwrTableUrl."'>this</a>.</p>";
 
-
+/*
 $doc = new DOMDocument();		
 $doc->loadHTMLFile($mmwrTableUrl);
 $qpMMWR = qp($doc->saveHTML());
@@ -71,3 +71,4 @@ foreach( $qpMMWRTable->find("tr") as $caseRow ) {
 	}
 }
 echo json_encode( $illnessCases );
+*/
