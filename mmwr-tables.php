@@ -97,25 +97,31 @@ if( $isTest )
 
 $mmwrTableUrl = "http://wonder.cdc.gov/mmwr/mmwr_reps.asp?mmwr_year=".$yearPresent."&mmwr_week=".$weekPresent."&mmwr_table=".$t;
 
-$doc = new DOMDocument();		
-$doc->loadHTMLFile($mmwrTableUrl);
-$qpMMWR = qp($doc->saveHTML());
-$qpMMWRTable = $qpMMWR->find("table:eq(8)");
-
 if( $isTest )
-	echo $qpMMWRTable->branch()->html();
+	echo "<br/>About to request <a href='".$mmwrTableUrl."'>this</a>.<br />";
 
-$illnessCases = array();
-foreach( $qpMMWRTable->find("tr") as $caseRow ) {
-	$stateAbbr = trim( $caseRow->branch()->find("td:eq(1)")->text() );
-	$stateAbbr = substr( $stateAbbr, 2 );
-	if(array_key_exists( $stateAbbr, $stateArray )) {
-		$casesThisWeek = $caseRow->branch()->find("td:eq(".$c.")")->text();
-		if( $casesThisWeek == "-" || $casesThisWeek == "N" || $casesThisWeek == "NN" || $casesThisWeek == "U" )
-			$casesThisWeek = 0;
-		else
-			$casesThisWeek = intval( $casesThisWeek );
-		$illnessCases[ $stateArray[$stateAbbr] ] = $casesThisWeek;
+if( !$isTest ) {
+
+	$doc = new DOMDocument();		
+	$doc->loadHTMLFile($mmwrTableUrl);
+	$qpMMWR = qp($doc->saveHTML());
+	$qpMMWRTable = $qpMMWR->find("table:eq(8)");
+
+	if( $isTest )
+		echo $qpMMWRTable->branch()->html();
+
+	$illnessCases = array();
+	foreach( $qpMMWRTable->find("tr") as $caseRow ) {
+		$stateAbbr = trim( $caseRow->branch()->find("td:eq(1)")->text() );
+		$stateAbbr = substr( $stateAbbr, 2 );
+		if(array_key_exists( $stateAbbr, $stateArray )) {
+			$casesThisWeek = $caseRow->branch()->find("td:eq(".$c.")")->text();
+			if( $casesThisWeek == "-" || $casesThisWeek == "N" || $casesThisWeek == "NN" || $casesThisWeek == "U" )
+				$casesThisWeek = 0;
+			else
+				$casesThisWeek = intval( $casesThisWeek );
+			$illnessCases[ $stateArray[$stateAbbr] ] = $casesThisWeek;
+		}
 	}
+	echo json_encode( $illnessCases );
 }
-echo json_encode( $illnessCases );

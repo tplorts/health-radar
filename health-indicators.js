@@ -42,8 +42,8 @@ function placeHeatmap( mapObject, name, mapData ) {
 		dissipating: false,
 		map: mapObject,
 		opacity: 0.5,
-		radius: 4,
-		maxIntensity: 100
+		radius: 4//,
+		//maxIntensity: 100
 	});
 	activeHeatmapName = name;
 }
