@@ -4,11 +4,11 @@
     <title>Health Radar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-		<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js" ></script>
-		<script type="text/javascript" src="https://code.jquery.com/ui/1.10.1/jquery-ui.min.js" ></script>
+		<script type="text/javascript" src="jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="jquery-ui-1.10.1.min.js" ></script>
 		<script type="text/javascript" src="jquery.csv-0.71.min.js" ></script>
 		
-		<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="jquery-ui-1.10.1.css">
 		
 
 	<style>
