@@ -9,7 +9,7 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" ></script>
 		<script type="text/javascript" src="jQuery/jquery.csv-0.71.min.js" ></script>
 		
-		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="jquery-ui-1.10.1.custom/css/smoothness/jquery-ui-1.10.1.custom.min.css">
 		
 
 	<style>
