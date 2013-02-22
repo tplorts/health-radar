@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Health Radar -- Chlamydia cases reported within the past week</title>
+    <title>Health Radar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" ></script>
-		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js" ></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js" ></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.10.1/jquery-ui.min.js" ></script>
 		<script type="text/javascript" src="jquery.csv-0.71.min.js" ></script>
 		
-		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
 		
 
 	<style>
