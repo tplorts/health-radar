@@ -1,8 +1,6 @@
 <?php
 
-require 'QueryPath/QueryPath.php';
-require 'StateAbbreviations.php';
-require 'MMWRTableInfo.php';
+
 
 libxml_use_internal_errors( true );
 
@@ -26,6 +24,12 @@ else
 echo "<p>Disease: '".$queriedDisease."'</p>";
 
 if( $testlevel == ++$stage ) exit();
+
+
+require 'QueryPath/QueryPath.php';
+require 'StateAbbreviations.php';
+require 'MMWRTableInfo.php';
+
 
 $stateArray = getOldGPOStateAbbreviations();
 echo "<p>".var_dump( $stateArray )."</p>";
