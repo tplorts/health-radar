@@ -37,14 +37,19 @@ function placeHeatmap( mapObject, name, mapData ) {
 	if( activeHeatmapName in heatmaps )
 		heatmaps[ activeHeatmapName ].setMap( null );
 	
-	heatmaps[ name ] = new google.maps.visualization.HeatmapLayer({
-		data: heatmapData,
-		dissipating: false,
-		map: mapObject,
-		opacity: 0.5,
-		radius: 4//,
-		//maxIntensity: 100
-	});
+	if( name in heatmaps )
+		heatmaps[ name ].setMap( mapObject );
+	else {
+		heatmaps[ name ] = new google.maps.visualization.HeatmapLayer({
+			data: heatmapData,
+			dissipating: false,
+			map: mapObject,
+			opacity: 0.5,
+			radius: 4,
+			maxIntensity: 1000
+		});
+	}
+	
 	activeHeatmapName = name;
 }
 

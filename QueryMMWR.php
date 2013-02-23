@@ -23,7 +23,7 @@ $stateArray = getOldGPOStateAbbreviations();
 if( $isTest )
 	echo "<p>".var_dump( $stateArray )."</p>";
 
-/*
+
 $mmwrTimeOptions = new DOMDocument();		
 $mmwrTimeOptions->loadHTMLFile("http://wonder.cdc.gov/mmwr/mmwrmorb.asp");
 $qpMmwrTimeOptions = qp($mmwrTimeOptions->saveHTML());
@@ -72,4 +72,4 @@ foreach( $qpMMWRTable->find("tr") as $caseRow ) {
 	}
 }
 echo json_encode( $illnessCases );
-*/
+
