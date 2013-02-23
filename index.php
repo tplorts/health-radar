@@ -130,7 +130,7 @@
 		
 			<tr><td>
 			
-				<div id="options-panel"> <p> <em>Options</em> </p>
+				<div id="options-panel"> <p> <em>Select Disease</em> </p>
 					<ol id="disease-select">
 									<!-- Table A -->
 						<li class="ui-state-default">Chlamydia trachomatis infection</li>
