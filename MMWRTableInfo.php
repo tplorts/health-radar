@@ -32,4 +32,5 @@ $diseaseTableIds = array(
 	"Varicella (chickenpox)" => array("2K", 1),
 	"West Nile virus disease, Neuroinvasive" => array("2K", 2),
 	"West Nile virus disease, Non-neuroinvasive" => array("2K", 3),
+	"Tuberculosis" => array("4", 1),
 );

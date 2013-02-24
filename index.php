@@ -175,6 +175,8 @@
 						<li class="ui-state-default">Varicella (chickenpox)</li>
 						<li class="ui-state-default">West Nile virus disease, Neuroinvasive</li>
 						<li class="ui-state-default">West Nile virus disease, Non-neuroinvasive</li>
+									<!-- Table IV -->
+						<li class="ui-state-default">Tuberculosis</li>
 					</ol>
 				</div>
 				
