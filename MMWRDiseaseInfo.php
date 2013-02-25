@@ -1,5 +1,5 @@
 <?php
-$diseaseTableIds = array(
+$MMWRDiseases = array(
 	"Chlamydia trachomatis infection" => array("2A", 1),
 	"Coccidioidomycosis" => array("2A", 2),
 	"Cryptosporidiosis" => array("2A", 3),
@@ -34,3 +34,12 @@ $diseaseTableIds = array(
 	"West Nile virus disease, Non-neuroinvasive" => array("2K", 3),
 	"Tuberculosis" => array("4", 1),
 );
+
+/*
+function diseaseListElements() {
+	$listHTML = "";
+	foreach( $MMWRDiseases as $name => $nothankyou )
+		$listHTML .=  "<li>" . $name . "</li>";
+	return $listHTML;
+}
+*/

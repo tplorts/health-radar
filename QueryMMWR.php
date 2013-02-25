@@ -2,7 +2,7 @@
 
 require 'QueryPath/QueryPath.php';
 require 'StateAbbreviations.php';
-require 'MMWRTableInfo.php';
+require 'MMWRDiseaseInfo.php';
 
 libxml_use_internal_errors( true );
 
@@ -35,9 +35,9 @@ if( $isTest )
 	echo "<p>Using year ".$yearPresent." and week number ".$weekPresent.".</p>";
 	
 if( $isTest )
-	echo "<p>".var_dump( $diseaseTableIds )."</p>";
+	echo "<p>".var_dump( $MMWRDiseases )."</p>";
 
-$d = $diseaseTableIds[ $queriedDisease ];
+$d = $MMWRDiseases[ $queriedDisease ];
 $t = $d[0];
 $c = 2 + 5*($d[1] - 1);
 
