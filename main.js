@@ -1,73 +1,74 @@
 
-function placeIllnessMarkers( pMap, diseaseName ) {
-	if( diseaseName == activeHeatmapName )
-		return;
+var mainMap;
+var activeDisease;
+var visualType;
 
-	$( "#progressbar" ).show();
-	$( "#progressbar" ).progressbar({
-		value: 0
-	});
-	
-	$("#progressbar").progressbar( "value", 20 );
-	
-	$.getJSON('QueryMMWR.php', 
-		{"diseaseName": diseaseName},
-		function(illnesses) {
-			$("#progressbar").progressbar( "value", 60 );
-			
-			$.get("state_latlon.csv", function( stateLocCSV ) {
-				$("#progressbar").progressbar( "value", 80 );
-				
-				stateLocs = $.csv.toObjects( stateLocCSV );
-				caseData = [];
-				for( var i in stateLocs ) {
-					var x = stateLocs[i];
-					var n = illnesses[x.state];
-					//placeCircleMarker( pMap, parseFloat(x.latitude), parseFloat(x.longitude), n/10 );
-					caseData.push({	
-						latitude: parseFloat(x.latitude), 
-						longitude: parseFloat(x.longitude), 
-						weight: n
-					});
-				}
-				$("#progressbar").progressbar( "value", 90 );
-				placeHeatmap( pMap, diseaseName, caseData );
-				$("#progressbar").progressbar( "value", 100 );
-				$("#progressbar").slideUp(500);
-				
-				//$("#disease-select").append("<li class='ui-state-default '>13</li>");
-				//$( "#disease-select li:first" ).trigger("selectableselected");
-
-			});
-		}
-	);
-}
-
-function setDisease( diseaseName ) {
-	placeIllnessMarkers( mainMap, diseaseName );
-}
-
-function init() {
-
-	$(".chzn-select").chosen().change( function( event, ui ) {
+function start() {
+	$("#disease-chooser").chosen().change( function( event, ui ) {
 		setDisease( ui.selected );
 	});
-
-	$(function() {
-		$( "#options-panel" ).accordion({
-			collapsible: true,
-			active: false
-		});
-		
+	
+	$( "#visual-type-chooser" ).buttonset();
+	
+	var selectedVisualId = $( "#visual-type-chooser input:checked" ).attr("id");
+	visualType = $( "#visual-type-chooser label[for='"+selectedVisualId+"']" ).text();
+	
+	$( "#visual-type-chooser label" ).click( function( event ) {
+		var previousVisual = visualType;
+		visualType = $(this).text();
+		if( visualType != previousVisual )
+			refreshIllnessLayer();
 	});
-	$(function() {
-		$( "#disease-select" ).menu({
-			select: function( event, ui ) {
-				$( "#options-panel" ).accordion({ active: false });
-				setDisease( ui.item.text() );
-			}
-		});
-	});
-
-	initializeMap();
+	
+	mainMap = initializeMap();
 }
+
+
+function setDisease( diseaseName ) {
+	if( diseaseName == activeDisease )
+		return;
+
+	activeDisease = diseaseName;
+	
+	$( "#progressbar" ).show();
+	$( "#progressbar" ).progressbar({ value: 10 });
+	
+	$.getJSON( 'QueryMMWR.php', {"diseaseName": diseaseName}, processIllnessResults );
+}
+
+
+function processIllnessResults( illnesses ) {
+	$("#progressbar").progressbar( "value", 50 );
+	
+	$.get("state_latlon.csv", function( stateLocCSV ) {
+		$("#progressbar").progressbar( "value", 70 );
+		
+		stateLocs = $.csv.toObjects( stateLocCSV );
+		caseData = [];
+		maxOccurences = 0;
+		for( var i in stateLocs ) {
+			var x = stateLocs[i];
+			var n = parseInt( illnesses[x.state] );
+			caseData.push({
+				location: new google.maps.LatLng( parseFloat(x.latitude), parseFloat(x.longitude) ),
+				weight: n
+			});
+			if( n > maxOccurences )
+				maxOccurences = n;
+		}
+		
+		$("#progressbar").progressbar( "value", 90 );
+		
+		if( visualType == "Heatmap" )
+			placeHeatmap( mainMap, activeDisease, caseData, maxOccurences );
+		else if( visualType == "Blobs" )
+			placeBlobset( mainMap, activeDisease, caseData, maxOccurences );
+		else
+			alert( "What is '" + visualType + "'?" );
+		
+		$("#progressbar").progressbar( "value", 100 );
+		$("#progressbar").slideUp(500);
+
+	});
+}
+

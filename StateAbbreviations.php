@@ -2,7 +2,8 @@
 
 function getOldGPOStateAbbreviations() {
 	$docStates = new DOMDocument();
-	$docStates->loadHTMLFile("http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations");
+	//$docStates->loadHTMLFile("http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations");
+	$docStates->loadHTMLFile("WikiStateAbbreviationsBackup.html");
 	$qpStates = qp($docStates->saveHTML());
 	$qpStateTable = $qpStates->find("div#mw-content-text table.wikitable");
 	$states = array();

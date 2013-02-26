@@ -62,7 +62,7 @@ $illnessCases = array();
 foreach( $qpMMWRTable->find("tr") as $caseRow ) {
 	$stateAbbr = trim( $caseRow->branch()->find("td:eq(1)")->text() );
 	$stateAbbr = substr( $stateAbbr, 2 );
-	if(array_key_exists( $stateAbbr, $stateArray )) {
+	if( @array_key_exists( $stateAbbr, $stateArray ) ) {
 		$casesThisWeek = $caseRow->branch()->find("td:eq(".$c.")")->text();
 		if( $casesThisWeek == "-" || $casesThisWeek == "N" || $casesThisWeek == "NN" || $casesThisWeek == "U" )
 			$casesThisWeek = 0;

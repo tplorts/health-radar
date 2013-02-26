@@ -4,14 +4,18 @@
     <title>Health Radar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" ></script>
-		<script type="text/javascript" src="jquery.csv-0.71.min.js" ></script>
-		
-		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js" ></script>
-		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
-		
-		<script src="chosen/chosen.jquery.js" type="text/javascript"></script>
-		<link rel="stylesheet" type="text/css" href="chosen/chosen.css">
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" ></script>
+	
+	<script type="text/javascript" src="jquery.csv-0.71.min.js" ></script>
+	
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
+	<!--link rel="stylesheet" type="text/css" href="ui-darkness/jquery-ui-1.10.1.custom.css"-->
+	<link rel="stylesheet" type="text/css" href="redmond/jquery-ui-1.10.1.custom.css">
+	
+	<script src="chosen/chosen.jquery.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="chosen/chosen.css">
 		
 		
 
@@ -35,6 +39,12 @@
 			height: 100%
 		}
 		
+		/* overriding the height of the dropdown for diseases */
+		.chzn-container .chzn-results {
+		/* #disease_chooser_chzn { */
+		  max-height: 400px;
+		}
+		
 	</style>
 
     <script type="text/javascript"
@@ -42,24 +52,20 @@
     </script>
 	
 	<script type="text/javascript" src="health-indicators.js"></script>
-	
 	<script type="text/javascript" src="main.js"></script>
-	
-	<style>
-		
-	</style>
 	
   </head>
 
-	<body onload="init()">
+	<body onload="start()">
 
 		<table id="main-table"><tbody>
 		
 			<tr><td>
 			
-				<div id="options-panel2">
-				
-					<select data-placeholder="Choose a disease..." class="chzn-select" style="width:350px;" >
+				<table><tbody><tr>
+				  <td>
+					<select id="disease-chooser" data-placeholder="Choose a disease..." 
+							class="chzn-select" style="width:350px;" >
 						<option value=""></option> 
 						<?php
 							require "MMWRDiseaseInfo.php";
@@ -67,13 +73,23 @@
 								echo "<option value='" . $name . "'>" . $name . "</option>";
 						?>
 					</select>
-				
-				</div>
+				  </td>
+				  <td>
+					<form>
+						<div id="visual-type-chooser" class="redmond" >
+							<input type="radio" name="visual" id="visual1" checked />
+								<label for="visual1" >Heatmap</label>
+							<input type="radio" name="visual" id="visual2" />
+								<label for="visual2" >Blobs</label>
+						</div>
+					</form>
+				  </td>
+				</tr></tbody></table>
 				
 			</td></tr>
 			
 			<tr id="progress-bar-row"><td>
-				<div id="progressbar"></div>
+				<div id="progressbar" class="redmond" ></div>
 			</td></tr>
 		
 			<tr id="map-container-row"><td>
@@ -82,8 +98,7 @@
 		
 		</tbody></table>
 
-
-
+	
 
 	</body>
 </html>
