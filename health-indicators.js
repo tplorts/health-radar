@@ -17,7 +17,58 @@ function initializeMap() {
 }
 
 
+function DiseaseVisual( map, data ) {
+	this.map = map;
 
+	this.activeTypes = {
+		"heatmap": true,
+		"blobs": false
+	};
+	
+	this.heatmap = new google.maps.visualization.HeatmapLayer( {
+			data: data,
+			dissipating: false,
+			map: map,
+			opacity: 0.5,
+			radius: 4
+			//maxIntensity: maxWeight + 20
+		} );
+}
+
+DiseaseVisual.prototype.activate = function() {
+	if( ! this.activeTypes["heatmap"] ) {
+		this.heatmap.setMap( this.map );
+		this.activeTypes["heatmap"] = true;
+	}
+}
+
+DiseaseVisual.prototype.deactivate = function() {
+	this.heatmap.setMap( null );
+	for( type in this.activeTypes )
+		this.activeTypes[type] = false;
+}
+
+
+var diseaseVisuals = {};
+var activeDiseaseName;
+
+function placeVisual( map, diseaseName, diseaseData ) {
+	if( diseaseName == activeDiseaseName )
+		return;
+	
+	if( activeDiseaseName in diseaseVisuals )
+		diseaseVisuals[activeDiseaseName].deactivate();
+	
+	if( diseaseName in diseaseVisuals ) {
+		diseaseVisuals[diseaseName].activate();
+	} else {
+		diseaseVisuals[diseaseName] = new DiseaseVisual( map, diseaseData );
+	}
+	
+	activeDiseaseName = diseaseName;
+}
+
+/*
 var heatmaps = {};
 var activeHeatmapName;
 
@@ -50,7 +101,7 @@ function placeHeatmap( mapObject, name, mapData, maxWeight ) {
 	activeHeatmapName = name;
 }
 
-
+	
 
 function placeBlobset( mapObject, name, mapData, maxWeight ) {
 	if( activeBlobsetName in blobsets )
@@ -64,19 +115,6 @@ function placeBlobset( mapObject, name, mapData, maxWeight ) {
 	activeBlobsetName = name;
 }
 
-function deactivateBlobset( bs ) {
-	setBlobsetActive( bs, false );
-}
-
-function activateBlobset( bs ) {
-	setBlobsetActive( bs, true );
-}
-
-function setBlobsetActive( blobset, isActive ) {
-	for( var i = 0; i < blobset.length; i++ ) {
-		blobset[i].setMap( isActive ? null : null );
-	}
-}
 
 
 function createBlobset( mapObject, mapData, maxWeight ) {
@@ -87,7 +125,7 @@ function createBlobset( mapObject, mapData, maxWeight ) {
 	}
 	return bs;
 }
-
+*/
 
 function placeCircleMarker( mapObject, location, weight, tooltip ) {
 	var marker = new google.maps.Marker ({

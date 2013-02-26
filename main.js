@@ -16,8 +16,8 @@ function start() {
 	$( "#visual-type-chooser label" ).click( function( event ) {
 		var previousVisual = visualType;
 		visualType = $(this).text();
-		if( visualType != previousVisual )
-			refreshIllnessLayer();
+		//if( visualType != previousVisual )
+		//	refreshIllnessLayer();
 	});
 	
 	mainMap = initializeMap();
@@ -25,15 +25,15 @@ function start() {
 
 
 function setDisease( diseaseName ) {
-	if( diseaseName == activeDisease )
-		return;
-
 	activeDisease = diseaseName;
 	
-	$( "#progressbar" ).show();
-	$( "#progressbar" ).progressbar({ value: 10 });
-	
-	$.getJSON( 'QueryMMWR.php', {"diseaseName": diseaseName}, processIllnessResults );
+	if( diseaseName in diseaseVisuals ) {
+		placeVisual( undefined, diseaseName, undefined );
+	} else {
+		$( "#progressbar" ).show();
+		$( "#progressbar" ).progressbar({ value: 10 });
+		$.getJSON( 'QueryMMWR.php', {"diseaseName": diseaseName}, processIllnessResults );
+	}
 }
 
 
@@ -59,12 +59,16 @@ function processIllnessResults( illnesses ) {
 		
 		$("#progressbar").progressbar( "value", 90 );
 		
+		placeVisual( mainMap, activeDisease, caseData );
+		
+		/*
 		if( visualType == "Heatmap" )
 			placeHeatmap( mainMap, activeDisease, caseData, maxOccurences );
 		else if( visualType == "Blobs" )
 			placeBlobset( mainMap, activeDisease, caseData, maxOccurences );
 		else
 			alert( "What is '" + visualType + "'?" );
+		*/
 		
 		$("#progressbar").progressbar( "value", 100 );
 		$("#progressbar").slideUp(500);
