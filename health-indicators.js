@@ -17,44 +17,12 @@ function initializeMap() {
 }
 
 
-function DiseaseVisual( map, data ) {
-	this.map = map;
-
-	this.activeTypes = {
-		"heatmap": true,
-		"blobs": false
-	};
-	
-	this.heatmap = new google.maps.visualization.HeatmapLayer( {
-			data: data,
-			dissipating: false,
-			map: map,
-			opacity: 0.5,
-			radius: 4
-			//maxIntensity: maxWeight + 20
-		} );
-}
-
-DiseaseVisual.prototype.activate = function() {
-	if( ! this.activeTypes["heatmap"] ) {
-		this.heatmap.setMap( this.map );
-		this.activeTypes["heatmap"] = true;
-	}
-}
-
-DiseaseVisual.prototype.deactivate = function() {
-	this.heatmap.setMap( null );
-	for( type in this.activeTypes )
-		this.activeTypes[type] = false;
-}
-
-
 var diseaseVisuals = {};
 var activeDiseaseName;
 
 function placeVisual( map, diseaseName, diseaseData ) {
-	if( diseaseName == activeDiseaseName )
-		return;
+	//if( diseaseName == activeDiseaseName )
+	//	return;
 	
 	if( activeDiseaseName in diseaseVisuals )
 		diseaseVisuals[activeDiseaseName].deactivate();
@@ -68,70 +36,79 @@ function placeVisual( map, diseaseName, diseaseData ) {
 	activeDiseaseName = diseaseName;
 }
 
-/*
-var heatmaps = {};
-var activeHeatmapName;
 
-var blobsets = {};
-var activeBlobsetName;
 
-function placeHeatmap( mapObject, name, mapData, maxWeight ) {
-	if( name == activeHeatmapName ) {
-		alert( "Already on that disease" );
-		return;
+
+function DiseaseVisual( map, data ) {
+	this.map = map;
+
+	this.activeTypes = {
+		"heatmap": true,
+		"blobs": true
+	};
+	
+	var heatmapData = [];
+	for( var state in data.cases ) {
+		heatmapData.push({
+			location: stateLocations[state],
+			weight: data.cases[state]
+		});
 	}
 	
-	if( activeHeatmapName in heatmaps )
-		heatmaps[ activeHeatmapName ].setMap( null );
+	this.heatmap = new google.maps.visualization.HeatmapLayer({
+		data: heatmapData,
+		dissipating: false,
+		map: (visualType == "Heatmap" ? map : null),
+		opacity: 0.5,
+		radius: 4,
+		maxIntensity: data.max + 30
+	});
 	
-	if( name in heatmaps )
-		heatmaps[ name ].setMap( mapObject );
-	else {
-		var heatmapOptions = {
-			data: mapData,
-			dissipating: false,
-			map: mapObject,
-			opacity: 0.5,
-			radius: 4,
-			maxIntensity: maxWeight + 20
-		};
-		heatmaps[ name ] = new google.maps.visualization.HeatmapLayer( heatmapOptions );
+	this.blobLayer = new BlobLayer({
+		data: data,
+		map: (visualType == "Blobs" ? map : null)
+	});
+}
+
+DiseaseVisual.prototype.activate = function() {
+	if( visualType == "Heatmap" )
+		this.heatmap.setMap( this.map );
+	else if( visualType == "Blobs" )
+		this.blobLayer.setMap( this.map );}
+
+DiseaseVisual.prototype.deactivate = function() {
+	this.setMap( null );
+}
+
+DiseaseVisual.prototype.setMap = function( pMap ) {
+	this.heatmap.setMap( pMap );
+	this.blobLayer.setMap( pMap );
+}
+
+
+function BlobLayer( blobOptions ) {
+	this.map = blobOptions.map;
+	this.blobs = {};
+	var max = Math.sqrt( blobOptions.data.max + 1 );
+	for( state in blobOptions.data.cases ) {
+		var cases = blobOptions.data.cases[state];
+		var size = Math.sqrt( cases ) * 40/max
+		this.blobs[state] = placeBlob( this.map, stateLocations[state], size, state+": "+cases.toString() );
 	}
-	
-	activeHeatmapName = name;
 }
 
-	
-
-function placeBlobset( mapObject, name, mapData, maxWeight ) {
-	if( activeBlobsetName in blobsets )
-		deactivateBlobset( blobsets[activeBlobsetName] );
-	
-	if( name in blobsets )
-		activateBlobset( blobsets[name] );
-	else
-		blobsets[ name ] = createBlobset( mapObject, mapData, maxWeight );
-	
-	activeBlobsetName = name;
-}
-
-
-
-function createBlobset( mapObject, mapData, maxWeight ) {
-	var bs = {};
-	for( var i = 0; i < mapData.length; i++ ) {
-		var d = mapData[i];
-		bs[i] = placeCircleMarker( mapObject, d.location, Math.sqrt( d.weight * 1e3 / maxWeight ), d.weight.toString() );
+BlobLayer.prototype.setMap = function( pMap ) {
+	for( var state in this.blobs ) {
+		this.blobs[state].setMap( pMap );
 	}
-	return bs;
 }
-*/
 
-function placeCircleMarker( mapObject, location, weight, tooltip ) {
+
+function placeBlob( mapObject, location, size, tooltip ) {
 	var marker = new google.maps.Marker ({
 		position: location,
 		map: mapObject,
-		icon: getCircle( weight ),
+		icon: getCircle( size ),
 		title: tooltip
 	});
 	google.maps.event.addListener(marker,'click',function() {
@@ -142,12 +119,12 @@ function placeCircleMarker( mapObject, location, weight, tooltip ) {
 }
 
 
-function getCircle(magnitude) {
+function getCircle( size ) {
 	return {
 		path: google.maps.SymbolPath.CIRCLE,
 		fillColor: 'red',
 		fillOpacity: .2,
-		scale: magnitude,
+		scale: size,
 		strokeColor: 'white',
 		strokeWeight: .5
 	};

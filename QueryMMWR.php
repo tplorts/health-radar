@@ -25,8 +25,8 @@ if( $isTest )
 	echo "<p>".var_dump( $stateArray )."</p>";
 
 
-$year = array_key_exists("year", $_GET) ? $_GET["year"] : mostRecentMMWRYear();
-$week = array_key_exists("week", $_GET) ? $_GET["week"] : mostRecentMMWRWeek();
+$year = array_key_exists("year", $_GET) ? $_GET["year"] : $mostRecentMMWRYear;
+$week = array_key_exists("week", $_GET) ? $_GET["week"] : $mostRecentMMWRWeek;
 
 if( $isTest )
 	echo "<p>Using year ".$year." and week number ".$week.".</p>";

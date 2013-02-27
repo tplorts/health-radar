@@ -1,6 +1,6 @@
 
 var mainMap;
-var activeDisease;
+var activeDisease = null;
 var visualType;
 var stateLocations;
 
@@ -17,8 +17,8 @@ function start() {
 	$( "#visual-type-chooser label" ).click( function( event ) {
 		var previousVisual = visualType;
 		visualType = $(this).text();
-		//if( visualType != previousVisual )
-		//	refreshIllnessLayer();
+		if( visualType != previousVisual )
+			refreshDiseaseLayer();
 	});
 	
 	mainMap = initializeMap();
@@ -27,15 +27,33 @@ function start() {
 }
 
 
+function refreshDiseaseLayer() {
+	if( activeDisease == null )
+		return;
+	
+	placeVisual( undefined, activeDisease, undefined );
+}
+
+
 function setDisease( diseaseName ) {
 	activeDisease = diseaseName;
+	
+	function twoDigits( s ) {
+		if( s.length == 2 ) return s;
+		return "0"+s;
+	}
 	
 	if( diseaseName in diseaseVisuals ) {
 		placeVisual( undefined, diseaseName, undefined );
 	} else {
 		$( "#progressbar" ).show();
 		$( "#progressbar" ).progressbar({ value: 10 });
-		$.getJSON( 'QueryMMWR.php', {"diseaseName": diseaseName}, processIllnessResults );
+		$.getJSON(	"QueryMMWR.php",
+					{	"diseaseName": diseaseName,
+						"year": $("#latest-year").text(),
+						"week": twoDigits( $("#latest-week").text() )
+					},
+					processIllnessResults );
 	}
 }
 
@@ -54,27 +72,24 @@ function fetchStateLocations() {
 function processIllnessResults( illnesses ) {
 	$("#progressbar").progressbar( "value", 50 );
 		
-	caseData = [];
-	maxOccurences = 0;
+	caseData = {};
+	maxCases = 0;
 	for( var state in stateLocations ) {
 		var n = parseInt( illnesses[state] );
-		caseData.push({
-			location: stateLocations[state],
-			weight: n
-		});
-		if( n > maxOccurences )
-			maxOccurences = n;
+		caseData[state] = n;
+		if( n > maxCases )
+			maxCases = n;
 	}
 	
 	$("#progressbar").progressbar( "value", 80 );
 	
-	placeVisual( mainMap, activeDisease, caseData );
+	placeVisual( mainMap, activeDisease, {cases:caseData, max:maxCases} );
 	
 	/*
 	if( visualType == "Heatmap" )
-		placeHeatmap( mainMap, activeDisease, caseData, maxOccurences );
+		placeHeatmap( mainMap, activeDisease, caseData, maxCases );
 	else if( visualType == "Blobs" )
-		placeBlobset( mainMap, activeDisease, caseData, maxOccurences );
+		placeBlobset( mainMap, activeDisease, caseData, maxCases );
 	else
 		alert( "What is '" + visualType + "'?" );
 	*/

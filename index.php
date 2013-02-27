@@ -11,7 +11,7 @@
 	
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js" ></script>
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
-	<!--link rel="stylesheet" type="text/css" href="ui-darkness/jquery-ui-1.10.1.custom.css"-->
+	<link rel="stylesheet" type="text/css" href="ui-darkness/jquery-ui-1.10.1.custom.css">
 	<link rel="stylesheet" type="text/css" href="redmond/jquery-ui-1.10.1.custom.css">
 	
 	<script src="chosen/chosen.jquery.js" type="text/javascript"></script>
@@ -45,6 +45,11 @@
 		  max-height: 400px;
 		}
 		
+		#options-table td {
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+		
 	</style>
 
     <script type="text/javascript"
@@ -62,7 +67,7 @@
 		
 			<tr><td>
 			
-				<table><tbody><tr>
+				<table id="options-table" ><tbody><tr>
 				  <td>
 					<select id="disease-chooser" data-placeholder="Choose a disease..." 
 							class="chzn-select" style="width:350px;" >
@@ -76,7 +81,7 @@
 				  </td>
 				  <td>
 					<form>
-						<div id="visual-type-chooser" class="redmond" >
+						<div id="visual-type-chooser" class="ui-darkness" >
 							<input type="radio" name="visual" id="visual1" checked />
 								<label for="visual1" >Heatmap</label>
 							<input type="radio" name="visual" id="visual2" />
@@ -90,8 +95,9 @@
 						require "MMWRTime.php";
 						//require "int2roman.php";
 						require "NthText.php";
-						echo "the " . ( $mostRecentMMWRWeek ) . "<sup>" . NthText( $mostRecentMMWRWeek )
-									. "</sup> week of the year " . ( $mostRecentMMWRYear ) . ".";
+						echo "the <span id='latest-week'>" . ( $mostRecentMMWRWeek ) . "</span>";
+						echo "<sup>" . NthText( $mostRecentMMWRWeek ) . "</sup> week";
+						echo " of the year <span id='latest-year'>" . ( $mostRecentMMWRYear ) . "</span>.";
 					?>
 				  </td>
 				</tr></tbody></table>
