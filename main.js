@@ -11,12 +11,19 @@ function start() {
 	
 	$( "#visual-type-chooser" ).buttonset();
 	
-	var selectedVisualId = $( "#visual-type-chooser input:checked" ).attr("id");
-	visualType = $( "#visual-type-chooser label[for='"+selectedVisualId+"']" ).text();
+	visualType = getSelectedVisualType();
 	
+	/*
 	$( "#visual-type-chooser label" ).click( function( event ) {
 		var previousVisual = visualType;
 		visualType = $(this).text();
+		if( visualType != previousVisual )
+			refreshDiseaseLayer();
+	});
+	*/
+	$( "#visual-type-chooser input" ).change( function( event ) {
+		var previousVisual = visualType;
+		visualType = getSelectedVisualType();
 		if( visualType != previousVisual )
 			refreshDiseaseLayer();
 	});
@@ -26,6 +33,11 @@ function start() {
 	stateLocations = fetchStateLocations();
 }
 
+function getSelectedVisualType() {
+	var selectedId = $( "#visual-type-chooser input:checked" ).attr("id");
+	var type = $( "#visual-type-chooser label[for='"+selectedId+"']" ).text();
+	return type;
+}
 
 function refreshDiseaseLayer() {
 	if( activeDisease == null )
