@@ -1,8 +1,9 @@
 <?php
 
-require 'QueryPath/QueryPath.php';
-require 'StateAbbreviations.php';
-require 'MMWRDiseaseInfo.php';
+require_once 'QueryPath/QueryPath.php';
+require_once 'StateAbbreviations.php';
+require_once 'MMWRDiseaseInfo.php';
+require_once "MMWRTime.php";
 
 libxml_use_internal_errors( true );
 
@@ -24,15 +25,11 @@ if( $isTest )
 	echo "<p>".var_dump( $stateArray )."</p>";
 
 
-$mmwrTimeOptions = new DOMDocument();		
-$mmwrTimeOptions->loadHTMLFile("http://wonder.cdc.gov/mmwr/mmwrmorb.asp");
-$qpMmwrTimeOptions = qp($mmwrTimeOptions->saveHTML());
-
-$yearPresent = $qpMmwrTimeOptions->branch()->find("select[name='mmwr_year'] option[selected]")->text();
-$weekPresent = $qpMmwrTimeOptions->find("select[name='mmwr_week'] option[selected]")->text();
+$year = array_key_exists("year", $_GET) ? $_GET["year"] : mostRecentMMWRYear();
+$week = array_key_exists("week", $_GET) ? $_GET["week"] : mostRecentMMWRWeek();
 
 if( $isTest )
-	echo "<p>Using year ".$yearPresent." and week number ".$weekPresent.".</p>";
+	echo "<p>Using year ".$year." and week number ".$week.".</p>";
 	
 if( $isTest )
 	echo "<p>".var_dump( $MMWRDiseases )."</p>";
@@ -44,7 +41,7 @@ $c = 2 + 5*($d[1] - 1);
 if( $isTest )
 	echo "<p>For disease '".$queriedDisease."' we will query table ".$t." and look to column number ".$c.".</p>";
 
-$mmwrTableUrl = "http://wonder.cdc.gov/mmwr/mmwr_reps.asp?mmwr_year=".$yearPresent."&mmwr_week=".$weekPresent."&mmwr_table=".$t;
+$mmwrTableUrl = "http://wonder.cdc.gov/mmwr/mmwr_reps.asp?mmwr_year=".$year."&mmwr_week=".$week."&mmwr_table=".$t;
 
 if( $isTest )
 	echo "<p>About to request <a href='".$mmwrTableUrl."'>".$mmwrTableUrl."</a>.</p>";

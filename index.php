@@ -84,6 +84,16 @@
 						</div>
 					</form>
 				  </td>
+				  <td>
+					The <a href="http://wonder.cdc.gov/mmwr/mmwrmorb.asp">MMWR</a> has data available as recent as 
+					<?php
+						require "MMWRTime.php";
+						//require "int2roman.php";
+						require "NthText.php";
+						echo "the " . ( $mostRecentMMWRWeek ) . "<sup>" . NthText( $mostRecentMMWRWeek )
+									. "</sup> week of the year " . ( $mostRecentMMWRYear ) . ".";
+					?>
+				  </td>
 				</tr></tbody></table>
 				
 			</td></tr>
