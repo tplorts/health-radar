@@ -92,7 +92,7 @@ function BlobLayer( blobOptions ) {
 	var max = Math.sqrt( blobOptions.data.max + 1 );
 	for( state in blobOptions.data.cases ) {
 		var cases = blobOptions.data.cases[state];
-		var size = Math.sqrt( cases ) * 40/max
+		var size = Math.sqrt( cases ) * 40/max;
 		this.blobs[state] = placeBlob( this.map, stateLocations[state], size, state+": "+cases.toString() );
 	}
 }

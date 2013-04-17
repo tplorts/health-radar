@@ -84,6 +84,9 @@
 					</form>
 				  </td>
 				  <td>
+					<button id="animate-button" >Animate</button>
+				  </td>
+				  <td>
 					The <a href="http://wonder.cdc.gov/mmwr/mmwrmorb.asp">MMWR</a> has data available as recent as 
 					<?php
 						require "MMWRTime.php";
@@ -94,6 +97,9 @@
 						echo " of the year <span id='latest-year'>" . ( $mostRecentMMWRYear ) . "</span>.";
 					?>
 				  </td>
+				  <td>
+					<div id="animation-progress">X</div>
+				  </tr>
 				</tr></tbody></table>
 				
 			</td></tr>

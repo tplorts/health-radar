@@ -12,15 +12,7 @@ function start() {
 	$( "#visual-type-chooser" ).buttonset();
 	
 	visualType = getSelectedVisualType();
-	
-	/*
-	$( "#visual-type-chooser label" ).click( function( event ) {
-		var previousVisual = visualType;
-		visualType = $(this).text();
-		if( visualType != previousVisual )
-			refreshDiseaseLayer();
-	});
-	*/
+
 	$( "#visual-type-chooser input" ).change( function( event ) {
 		var previousVisual = visualType;
 		visualType = getSelectedVisualType();
@@ -28,10 +20,73 @@ function start() {
 			refreshDiseaseLayer();
 	});
 	
+	$( "#animate-button" ).button().click( function(event) {
+		animateDisease( mainMap, activeDisease );
+	});
+	
 	mainMap = initializeMap();
 	
 	stateLocations = fetchStateLocations();
 }
+
+function twoDigits( s ) {
+	if( s.length == 2 ) return s;
+	return "0"+s;
+}
+
+
+var rxWeeks;
+var dataForWeek;
+var latestWeekNo;
+
+function animateDisease( map, disease ) {
+	$( "#progressbar" ).show();
+	$( "#progressbar" ).progressbar({ value: 1 });
+	
+	latestWeekNo = parseInt( $("#latest-week").text() );
+	rxWeeks = 0;
+	dataForWeek = {};
+	for( var week = 1; week <= latestWeekNo; week++ ) {
+		$.getJSON( "QueryMMWR.php",
+			{
+				"diseaseName": disease,
+				"year": $("#latest-year").text(),
+				"week": twoDigits( week.toString() )
+			},
+			function( data, textStatus, jqXHR ) {
+				$("#progressbar").progressbar( "value", Math.round(++rxWeeks*100 / latestWeekNo) );
+				dataForWeek[parseInt(data.week)] = processIllnessResults( data.statewiseCases );
+				if( rxWeeks == latestWeekNo ) {
+					$("#progressbar").slideUp();
+					startAnimation();
+				}
+			}
+		);
+	}
+	
+}
+
+
+var displayWeek;
+var animationInterval;
+
+function startAnimation() {
+	displayWeek = 1;
+	animationInterval = setInterval( function() {
+			$("#animation-progress").text( displayWeek.toString() );
+			placeVisual( mainMap, activeDisease + displayWeek.toString(), dataForWeek[displayWeek] );
+			//displayWeek = ((displayWeek + 1) % latestWeekNo) + 1;
+			if( ++displayWeek > latestWeekNo )
+				displayWeek = 1;
+		}, 
+		500
+	);
+}
+
+function stopAnimation() {
+	clearInterval( animationInterval );
+}
+
 
 function getSelectedVisualType() {
 	var selectedId = $( "#visual-type-chooser input:checked" ).attr("id");
@@ -50,22 +105,24 @@ function refreshDiseaseLayer() {
 function setDisease( diseaseName ) {
 	activeDisease = diseaseName;
 	
-	function twoDigits( s ) {
-		if( s.length == 2 ) return s;
-		return "0"+s;
-	}
-	
 	if( diseaseName in diseaseVisuals ) {
 		placeVisual( undefined, diseaseName, undefined );
 	} else {
 		$( "#progressbar" ).show();
-		$( "#progressbar" ).progressbar({ value: 10 });
-		$.getJSON(	"QueryMMWR.php",
-					{	"diseaseName": diseaseName,
-						"year": $("#latest-year").text(),
-						"week": twoDigits( $("#latest-week").text() )
-					},
-					processIllnessResults );
+		$( "#progressbar" ).progressbar({ value: 33 });
+		$.getJSON( "QueryMMWR.php",
+			{
+				"diseaseName": diseaseName,
+				"year": $("#latest-year").text(),
+				"week": twoDigits( $("#latest-week").text() )
+			},
+			function( data, textStatus, jqXHR ) {
+				$("#progressbar").progressbar( "value", 66 );
+				placeVisual( mainMap, activeDisease, processIllnessResults( data.statewiseCases ) );
+				$("#progressbar").progressbar( "value", 100 );
+				$("#progressbar").slideUp();
+			}
+		);
 	}
 }
 
@@ -82,8 +139,6 @@ function fetchStateLocations() {
 }
 	
 function processIllnessResults( illnesses ) {
-	$("#progressbar").progressbar( "value", 50 );
-		
 	caseData = {};
 	maxCases = 0;
 	for( var state in stateLocations ) {
@@ -92,22 +147,9 @@ function processIllnessResults( illnesses ) {
 		if( n > maxCases )
 			maxCases = n;
 	}
-	
-	$("#progressbar").progressbar( "value", 80 );
-	
-	placeVisual( mainMap, activeDisease, {cases:caseData, max:maxCases} );
-	
-	/*
-	if( visualType == "Heatmap" )
-		placeHeatmap( mainMap, activeDisease, caseData, maxCases );
-	else if( visualType == "Blobs" )
-		placeBlobset( mainMap, activeDisease, caseData, maxCases );
-	else
-		alert( "What is '" + visualType + "'?" );
-	*/
-	
-	$("#progressbar").progressbar( "value", 100 );
-	$("#progressbar").slideUp(500);
-
+	return { 
+		cases: caseData, 
+		max: maxCases 
+	};
 }
 

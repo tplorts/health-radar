@@ -68,5 +68,11 @@ foreach( $qpMMWRTable->find("tr") as $caseRow ) {
 		$illnessCases[ $stateArray[$stateAbbr] ] = $casesThisWeek;
 	}
 }
-echo json_encode( $illnessCases );
+$responseData = array(
+	"diseaseName" => $queriedDisease,
+	"year" => $year,
+	"week" => $week,
+	"statewiseCases" => $illnessCases
+);
+echo json_encode( $responseData );
 
