@@ -17,12 +17,13 @@ function initializeMap() {
 }
 
 
-var diseaseVisuals = {};
 var activeDiseaseName;
 
 function placeVisual( map, diseaseName, diseaseData ) {
-	//if( diseaseName == activeDiseaseName )
-	//	return;
+	if( diseaseName == activeDiseaseName ) {
+		diseaseVisuals[activeDiseaseName].setData( diseaseData );
+		return;
+	}
 	
 	if( activeDiseaseName in diseaseVisuals )
 		diseaseVisuals[activeDiseaseName].deactivate();
@@ -37,16 +38,7 @@ function placeVisual( map, diseaseName, diseaseData ) {
 }
 
 
-
-
-function DiseaseVisual( map, data ) {
-	this.map = map;
-
-	this.activeTypes = {
-		"heatmap": true,
-		"blobs": true
-	};
-	
+function createHeatmapData( data ) {
 	var heatmapData = [];
 	for( var state in data.cases ) {
 		heatmapData.push({
@@ -54,9 +46,34 @@ function DiseaseVisual( map, data ) {
 			weight: data.cases[state]
 		});
 	}
+	return heatmapData;
+}
+
+function addData( original, next ) {
+	var newData = {
+		cases: {},
+		max: 0
+	};
+	for( var state in original.cases ) {
+		newData.cases[state] = original.cases[state] + next.cases[state];
+		if( newData.cases[state] > newData.max )
+			newData.max = newData.cases[state];
+	}
+	return newData;
+}
+
+
+function DiseaseVisual( map, data ) {
+	this.map = map;
+	this.data = data;
+
+	this.activeTypes = {
+		"heatmap": true,
+		"blobs": true
+	};
 	
 	this.heatmap = new google.maps.visualization.HeatmapLayer({
-		data: heatmapData,
+		data: createHeatmapData( data ),
 		dissipating: false,
 		map: (visualType == "Heatmap" ? map : null),
 		opacity: 0.5,
@@ -74,16 +91,49 @@ DiseaseVisual.prototype.activate = function() {
 	if( visualType == "Heatmap" )
 		this.heatmap.setMap( this.map );
 	else if( visualType == "Blobs" )
-		this.blobLayer.setMap( this.map );}
+		this.blobLayer.setMap( this.map );
+}
 
 DiseaseVisual.prototype.deactivate = function() {
 	this.setMap( null );
 }
 
+DiseaseVisual.prototype.setData = function( newData ) {
+	this.data = newData;
+	this.heatmap.setData( createHeatmapData(this.data) );
+}
+
+
 DiseaseVisual.prototype.setMap = function( pMap ) {
 	this.heatmap.setMap( pMap );
 	this.blobLayer.setMap( pMap );
 }
+
+
+function DiseaseAnimation( map, weeklyData, firstWeek, lastWeek ) {
+	this.firstWeek = firstWeek;
+	this.lastWeek = lastWeek;
+	this.weekSpan = lastWeek - firstWeek + 1;
+	
+	this.accumulatedData = [];
+	this.accumulatedData[firstWeek] = weeklyData[firstWeek];
+	for( week = firstWeek + 1; week <= lastWeek; week++ ) {
+		this.accumulatedData[week] = addData( this.accumulatedData[week - 1], weeklyData[week] );
+	}
+	
+	this.globalMax = this.accumulatedData[lastWeek].max;
+	
+	this.currentWeek = firstWeek;
+	this.dvisual = DiseaseVisual( map, this.accumulatedData[this.currentWeek] );
+	this.dvisual.heatmap.maxIntensity = this.globalMax * 1.1;
+}
+
+DiseaseAnimation.prototype.step = function() {
+	if( ++this.currentWeek > this.lastWeek )
+		this.currentWeek = firstWeek;
+	this.dvisual.setData( this.accumulatedData[this.currentWeek] );
+}
+
 
 
 function BlobLayer( blobOptions ) {

@@ -38,6 +38,10 @@ function twoDigits( s ) {
 var rxWeeks;
 var dataForWeek;
 var latestWeekNo;
+var firstWeek;
+var weekSpan;
+
+var animation;
 
 function animateDisease( map, disease ) {
 	$( "#progressbar" ).show();
@@ -45,8 +49,10 @@ function animateDisease( map, disease ) {
 	
 	latestWeekNo = parseInt( $("#latest-week").text() );
 	rxWeeks = 0;
+	firstWeek = 20;
+	weekSpan = latestWeekNo - firstWeek + 1;
 	dataForWeek = {};
-	for( var week = 1; week <= latestWeekNo; week++ ) {
+	for( var week = firstWeek; week <= latestWeekNo; week++ ) {
 		$.getJSON( "QueryMMWR.php",
 			{
 				"diseaseName": disease,
@@ -54,9 +60,10 @@ function animateDisease( map, disease ) {
 				"week": twoDigits( week.toString() )
 			},
 			function( data, textStatus, jqXHR ) {
-				$("#progressbar").progressbar( "value", Math.round(++rxWeeks*100 / latestWeekNo) );
+				$("#progressbar").progressbar( "value", Math.round(++rxWeeks*100 / weekSpan) );
 				dataForWeek[parseInt(data.week)] = processIllnessResults( data.statewiseCases );
-				if( rxWeeks == latestWeekNo ) {
+				if( rxWeeks == weekSpan ) {
+					animation = DiseaseAnimation( map, dataForWeek, firstWeek, latestWeekNo );
 					$("#progressbar").slideUp();
 					startAnimation();
 				}
@@ -67,19 +74,22 @@ function animateDisease( map, disease ) {
 }
 
 
+var diseaseVisuals = {};
+
+
 var displayWeek;
 var animationInterval;
 
 function startAnimation() {
-	displayWeek = 1;
+	displayWeek = firstWeek;
 	animationInterval = setInterval( function() {
-			$("#animation-progress").text( displayWeek.toString() );
-			placeVisual( mainMap, activeDisease + displayWeek.toString(), dataForWeek[displayWeek] );
-			//displayWeek = ((displayWeek + 1) % latestWeekNo) + 1;
+			animation.step();
+						
 			if( ++displayWeek > latestWeekNo )
-				displayWeek = 1;
+				displayWeek = firstWeek;
+			$("#animation-progress").text( displayWeek.toString() );
 		}, 
-		500
+		1000
 	);
 }
 
