@@ -97,10 +97,10 @@ foreach( $locations as $L ) {
   }
 }
 
-$nextID = 800;
+//$nextID = 1;
 foreach( $states as $stateName => $stateInfo ) {
-  $q = "INSERT INTO usa_state_info(id,name,abbreviation,abbreviation_old_gpo,census_population,present_population,latitude,longitude) VALUES (" .
-    $nextID++ .','.
+  $q = "INSERT INTO usa_state_info(name,abbreviation,abbreviation_old_gpo,census_population,present_population,latitude,longitude) VALUES (" .
+    //$nextID++ .','.
     '"'.$stateInfo->name.'"' .','.
     '"'.$stateInfo->abbreviation.'"' .','.
     '"'.$stateInfo->oldGPO.'"' .','.
